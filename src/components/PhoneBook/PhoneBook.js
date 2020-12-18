@@ -7,6 +7,7 @@ import Section from './Section/Section';
 import styles from './PhoneBook.module.css';
 
 function PhoneBook({ contacts }) {
+  console.log(contacts);
   return (
     <>
       <div className={styles.wrapSections}>
