@@ -1,0 +1,11 @@
+.statisticList{
+
+}
+
+.statisticItem{
+    margin-bottom: 10px;
+
+}
+.statisticItem:first-letter{
+    text-transform: uppercase;
+}
