@@ -40,7 +40,10 @@ export default function ImageFinder() {
       .crateFetchFind(searchQuery, pageQuery)
       .then(({ hits, totalHits }) => {
         setImages((prevState) => [...prevState, ...hits]);
-
+        console.log(hits.length);
+        if (hits.length === 0) {
+          return;
+        }
         setTotal(totalHits);
         console.log(totalHits);
         lazyLoadImg(infinityScroll.current);
