@@ -48,6 +48,9 @@ export default function ImageFinder() {
   };
 
   const handlerSearchQuery = (query) => {
+    if (query === searchQuery) {
+      return;
+    }
     setImages([]);
     setPageQuery(1);
     setSearchQuery(query);
